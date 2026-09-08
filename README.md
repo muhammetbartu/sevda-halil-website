@@ -107,8 +107,4 @@ curl -sI https://psksevdahalil.com | head -1
 `kvkk.html` sayfası aydınlatma metnini ve gizlilik politikasını içerir; iletişim
 formundaki zorunlu onay kutusu bu sayfaya bağlanır. Metin, Formspree ve GitHub Pages
 sunucuları yurt dışında olduğu için yurt dışına aktarıma ilişkin açık rıza ifadesini de
-içerir.
-
-Yayına almadan önce metindeki ad, unvan, adres ve e-posta bilgilerini gerçek
-bilgilerinizle güncelleyin. Metin genel bilgilendirme amaçlıdır; bir hukuk danışmanına
-gözden geçirtilmesi önerilir.
+içerir. Ad, unvan, adres ve e-posta bilgileri gerçek bilgilerle doldurulmuştur.
