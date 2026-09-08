@@ -25,30 +25,23 @@ python3 -m http.server 8000
 
 Ardından `http://localhost:8000` adresini açın.
 
-## Formu e-postaya bağlamak (Formspree)
+## Form altyapısı (Formspree)
 
-Form şu an Formspree'ye gönderim yapacak şekilde kurulu, ancak form kimliği henüz
-girilmedi. Kimlik girilmediği sürece form, ziyaretçinin e-posta uygulamasında hazır bir
-mesaj açar (yedek davranış).
+İletişim formu Formspree üzerinden çalışır ve mesajlar `psk.sevdahalil@gmail.com`
+adresine iletilir.
 
-Bağlamak için:
+- **Endpoint:** `https://formspree.io/f/xkjnqenp` (`index.html` içindeki form `action`
+  değeri)
+- **Plan:** ücretsiz, ayda 50 mesaj
+- **Spam koruması:** formda görünmeyen `_gotcha` tuzak alanı
 
-1. [formspree.io](https://formspree.io) üzerinde ücretsiz hesap açın ve mesajların
-   gideceği e-posta adresini doğrulayın.
-2. Yeni bir form oluşturun. Formspree size `https://formspree.io/f/abcdwxyz` biçiminde
-   bir adres verir; sondaki 8 karakter form kimliğidir.
-3. `index.html` içindeki form etiketinde `FORMSPREE_ID` yazan yeri bu kimlikle
-   değiştirin:
+Alıcı adresi değiştirmek için Formspree panelindeki form ayarlarını güncellemek
+yeterlidir; kodda değişiklik gerekmez. Formun `action` değeri değişirse
+`script.js` içindeki gönderim mantığı da aynı adresi kullanır (form etiketinden
+okunur).
 
-```html
-<form action="https://formspree.io/f/abcdwxyz" method="POST">
-```
-
-4. Siteyi yayınladıktan sonra formu bir kez gerçekten doldurup gönderin; Formspree ilk
-   gönderimde adresi doğrular.
-
-Ücretsiz plan ayda 50 mesaj gönderir. Formda görünmeyen bir tuzak alanı (`_gotcha`)
-bulunur; bu, basit spam botlarını engeller.
+Formspree erişilemezse form, kullanıcıya hata mesajı gösterir ve doğrudan e-posta
+adresine yazmasını önerir.
 
 ## Yayınlamak (GitHub Pages)
 
