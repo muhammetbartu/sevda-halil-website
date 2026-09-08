@@ -56,7 +56,7 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((section) => sectionObserver.observe(section));
 
-const CONTACT_EMAIL = "merhaba@sevdahalil.com";
+const CONTACT_EMAIL = "merhaba@psksevdahalil.com";
 
 const form = document.getElementById("contactForm");
 const formNote = document.getElementById("formNote");

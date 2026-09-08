@@ -67,24 +67,34 @@ git commit -m "İçerik güncellendi"
 git push
 ```
 
-## Alan adını bağlamak
+## Alan adı: psksevdahalil.com
 
-1. Depoya `CNAME` adında, içinde yalnızca alan adınız yazan bir dosya ekleyin
-   (örnek içerik: `sevdahalil.com`).
-2. Alan adını aldığınız firmanın DNS panelinde şu kayıtları oluşturun:
+Alan adı Hostinger'da kayıtlı ve isim sunucuları Hostinger'da (`dns-parking.com`),
+yani DNS kayıtları hPanel üzerinden yönetilir.
 
-| Tür | Ad / Host | Değer |
+Hostinger hPanel → **Domainler → psksevdahalil.com → DNS / İsim sunucuları** altında
+şu kayıtlar bulunmalıdır:
+
+| Tür | Ad | Değer |
 | --- | --- | --- |
 | A | `@` | `185.199.108.153` |
 | A | `@` | `185.199.109.153` |
 | A | `@` | `185.199.110.153` |
 | A | `@` | `185.199.111.153` |
-| CNAME | `www` | `<kullanıcı-adı>.github.io` |
+| CNAME | `www` | `muhammetbartu.github.io` |
 
-3. GitHub deposunda **Settings → Pages → Custom domain** alanına alan adını yazın,
-   kaydedin ve DNS doğrulaması bittikten sonra **Enforce HTTPS** seçeneğini işaretleyin.
+Park sayfasına ait eski `A` kaydı (`2.57.91.91`) silinmelidir.
 
-DNS değişikliklerinin yayılması genellikle 15 dakika ile birkaç saat sürer.
+DNS tarafı hazır olduğunda depodaki `CNAME` dosyası ve GitHub **Settings → Pages →
+Custom domain** ayarı alan adını gösterir; ardından **Enforce HTTPS** işaretlenir.
+Sertifika birkaç dakika içinde otomatik oluşur.
+
+Doğrulamak için:
+
+```bash
+dig +short psksevdahalil.com A
+curl -sI https://psksevdahalil.com | head -1
+```
 
 ## Kişiselleştirme
 
