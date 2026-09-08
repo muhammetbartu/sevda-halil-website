@@ -8,6 +8,7 @@ adımı yok; düz HTML, CSS ve JavaScript ile çalışır.
 | Dosya | İçerik |
 | --- | --- |
 | `index.html` | Sayfa yapısı, tüm metinler ve SEO etiketleri |
+| `kvkk.html` | KVKK aydınlatma metni ve gizlilik politikası |
 | `styles.css` | Renk paleti, tipografi ve düzen |
 | `script.js` | Mobil menü, kaydırma efektleri, iletişim formu |
 | `favicon.svg` | Tarayıcı sekmesi simgesi |
@@ -100,6 +101,11 @@ DNS değişikliklerinin yayılması genellikle 15 dakika ile birkaç saat sürer
 
 ## Yasal not
 
-Site, danışan gizliliği ve acil durum yönlendirmesine dair bir bilgi notu ile formda
-açık onay kutusu içerir. Yayına almadan önce KVKK aydınlatma metni ve gizlilik
-politikası eklemeniz önerilir.
+`kvkk.html` sayfası aydınlatma metnini ve gizlilik politikasını içerir; iletişim
+formundaki zorunlu onay kutusu bu sayfaya bağlanır. Metin, Formspree ve GitHub Pages
+sunucuları yurt dışında olduğu için yurt dışına aktarıma ilişkin açık rıza ifadesini de
+içerir.
+
+Yayına almadan önce metindeki ad, unvan, adres ve e-posta bilgilerini gerçek
+bilgilerinizle güncelleyin. Metin genel bilgilendirme amaçlıdır; bir hukuk danışmanına
+gözden geçirtilmesi önerilir.

@@ -77,6 +77,11 @@ const openMailClient = (data) => {
   window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
 };
 
+// Onay metnindeki bağlantı, etiketin içinde olduğu için tıklamada kutuyu da işaretliyor.
+form.querySelectorAll(".consent a").forEach((link) => {
+  link.addEventListener("click", (event) => event.stopPropagation());
+});
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
