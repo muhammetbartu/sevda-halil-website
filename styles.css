@@ -405,6 +405,15 @@ img {
   align-items: start;
 }
 
+#hakkimda .split {
+  align-items: center;
+}
+
+#hakkimda .stat-card {
+  position: sticky;
+  top: calc(var(--header-h) + 1.5rem);
+}
+
 .checklist {
   list-style: none;
   margin: 1.75rem 0 0;
@@ -443,10 +452,10 @@ img {
 .stat strong {
   display: block;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 2.4rem;
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
   font-weight: 500;
   color: var(--accent-deep);
-  line-height: 1;
+  line-height: 1.15;
 }
 
 .stat span {
@@ -822,12 +831,16 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
+  #hakkimda .stat-card {
+    position: static;
+  }
+
   .hero-card {
     max-width: 460px;
   }
 
   .stat-card {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .nav-toggle {
