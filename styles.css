@@ -406,13 +406,19 @@ img {
 }
 
 #hakkimda .split {
-  align-items: center;
+  align-items: stretch;
 }
 
 #hakkimda .stat-card {
-  align-self: center;
   width: 100%;
   height: fit-content;
+  margin-block: auto;
+  align-self: center;
+}
+
+/* Transform, sticky ortalama ile çakışabiliyor; burada sadece opacity kullanalım. */
+#hakkimda .stat-card.reveal {
+  transform: none;
 }
 
 .checklist {
