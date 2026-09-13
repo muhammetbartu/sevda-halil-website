@@ -409,16 +409,19 @@ img {
   align-items: stretch;
 }
 
-#hakkimda .stat-card {
-  width: 100%;
-  height: fit-content;
-  margin-block: auto;
-  align-self: center;
+#hakkimda .stat-col {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
 }
 
-/* Transform, sticky ortalama ile çakışabiliyor; burada sadece opacity kullanalım. */
-#hakkimda .stat-card.reveal {
+/* Transform grid satır yüksekliğini bozabiliyor; bu sütunda sadece opacity. */
+#hakkimda .stat-col.reveal {
   transform: none;
+}
+
+#hakkimda .stat-card {
+  width: 100%;
 }
 
 .checklist {
