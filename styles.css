@@ -164,8 +164,9 @@ img {
   height: 96px;
   flex: none;
   display: block;
-  border-radius: 14px;
+  border-radius: 50%;
   object-fit: cover;
+  border: 1px solid var(--line);
   box-shadow: 0 6px 18px -12px rgba(74, 55, 40, 0.45);
 }
 
@@ -898,7 +899,6 @@ textarea:focus {
   .brand-mark {
     width: 80px;
     height: 80px;
-    border-radius: 12px;
   }
 
   .brand-text strong {
@@ -932,7 +932,6 @@ textarea:focus {
   .brand-mark {
     width: 72px;
     height: 72px;
-    border-radius: 10px;
   }
 
   .brand-text strong {
