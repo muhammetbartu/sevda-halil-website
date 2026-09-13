@@ -410,8 +410,9 @@ img {
 }
 
 #hakkimda .stat-card {
-  position: sticky;
-  top: calc(var(--header-h) + 1.5rem);
+  align-self: center;
+  width: 100%;
+  height: fit-content;
 }
 
 .checklist {
@@ -829,10 +830,6 @@ textarea:focus {
   .hero-inner,
   .split {
     grid-template-columns: 1fr;
-  }
-
-  #hakkimda .stat-card {
-    position: static;
   }
 
   .hero-card {
