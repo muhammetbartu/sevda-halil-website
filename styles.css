@@ -406,17 +406,12 @@ img {
 }
 
 #hakkimda .split {
-  align-items: stretch;
-}
-
-#hakkimda .stat-col {
-  display: flex;
   align-items: center;
-  min-height: 100%;
 }
 
-/* Transform grid satır yüksekliğini bozabiliyor; bu sütunda sadece opacity. */
-#hakkimda .stat-col.reveal {
+#hakkimda .stat-col.reveal,
+#hakkimda .split > .reveal {
+  /* Transform, grid dikey ortalamayı bozuyor */
   transform: none;
 }
 
