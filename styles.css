@@ -11,7 +11,7 @@
   --line: #e4d9c8;
   --radius: 18px;
   --radius-sm: 12px;
-  --header-h: 116px;
+  --header-h: 128px;
   --shadow: 0 18px 40px -28px rgba(74, 55, 40, 0.35);
   --maxw: 1120px;
 }
@@ -160,18 +160,13 @@ img {
 }
 
 .brand-mark {
-  width: 68px;
-  height: 68px;
+  width: 96px;
+  height: 96px;
   flex: none;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.7rem;
-  letter-spacing: 0.08em;
-  color: var(--accent-deep);
+  display: block;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px -12px rgba(74, 55, 40, 0.45);
 }
 
 .brand-text {
@@ -355,11 +350,17 @@ img {
 .portrait {
   aspect-ratio: 4 / 5;
   border-radius: 20px;
-  background:
-    radial-gradient(circle at 28% 22%, rgba(255, 253, 249, 0.9), transparent 55%),
-    linear-gradient(150deg, #e9dcc9 0%, #d9c6ac 45%, #c6ad8e 100%);
   position: relative;
   overflow: hidden;
+  background: var(--cream-deep);
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .portrait::after {
@@ -368,6 +369,7 @@ img {
   inset: 14px;
   border: 1px solid rgba(255, 253, 249, 0.55);
   border-radius: 14px;
+  pointer-events: none;
 }
 
 .hero-card blockquote {
@@ -886,7 +888,7 @@ textarea:focus {
 
 @media (max-width: 480px) {
   :root {
-    --header-h: 110px;
+    --header-h: 112px;
   }
 
   .brand {
@@ -894,9 +896,9 @@ textarea:focus {
   }
 
   .brand-mark {
-    width: 66px;
-    height: 66px;
-    font-size: 1.6rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
   }
 
   .brand-text strong {
@@ -928,9 +930,9 @@ textarea:focus {
   }
 
   .brand-mark {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
   }
 
   .brand-text strong {
