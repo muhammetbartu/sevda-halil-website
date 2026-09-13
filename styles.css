@@ -649,6 +649,16 @@ textarea:focus {
   outline: none;
 }
 
+input[readonly] {
+  cursor: default;
+  color: var(--brown-soft);
+}
+
+input[readonly]:focus {
+  border-color: var(--line);
+  background: var(--cream);
+}
+
 .consent {
   display: flex;
   align-items: flex-start;

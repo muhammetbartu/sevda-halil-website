@@ -346,7 +346,16 @@
             <label for="email">E-posta</label>
             <input id="email" name="email" type="email" autocomplete="email" required />
           </div>
-          <input type="hidden" name="topic" value="Online seans" />
+          <div class="field">
+            <label for="topic">Görüşme türü</label>
+            <input
+              id="topic"
+              name="topic"
+              type="text"
+              value="Online seans"
+              readonly
+            />
+          </div>
           <div class="field">
             <label for="message">Kısaca paylaşmak istedikleriniz</label>
             <textarea id="message" name="message" rows="5" required></textarea>
